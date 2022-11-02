@@ -1,0 +1,35 @@
+.region {
+    max-width: 976px;
+    margin-top: 56px;
+}
+
+.region__wrapper .slick-slide {
+    position: relative;
+    max-width: 314px;
+    padding: 16px 16px 32px;
+    background-color: var(--color-white);
+    border-radius: 12px;
+    min-height: 691px;
+}
+
+.region__wrapper .slick-slide:not(:last-child) {
+    margin-right: 18px;
+}
+
+@media (max-width: 1439px) {
+    .region__wrapper .slick-slide {
+        max-width: 264px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .region {
+        max-width: 645px
+    }
+}
+
+@media (max-width: 992px) {
+    .region {
+        margin-top: 40px;
+    }
+}

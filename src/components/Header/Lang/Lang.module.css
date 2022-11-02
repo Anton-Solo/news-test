@@ -1,0 +1,67 @@
+.lang {
+    border-left: 1px solid #8A8A8A;
+    padding: 2px 0 2px 40px;
+    margin-left: 38px;
+}
+
+.lang a {
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #2D2D2D;
+}
+
+.lang a.active {
+    color: #B0B0B0;
+}
+
+.lang a:first-child {
+    margin-right: 18px;
+}
+
+.lang__mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .lang {
+        display: none;
+    }
+
+    .lang__mobile {
+        display: block;
+        position: relative;
+    }
+
+    .lang__mobile a {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        line-height: 17px;
+        font-weight: 500;
+        padding-right: 19px;
+    }
+
+    .lang__mobile::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-60%);
+        width: 16px;
+        height: 16px;
+        background-image: url(./img/caret.svg);
+    }
+
+    .lang__modal {
+        display: none;
+        list-style-type: none;
+        position: absolute;
+        left: 0;
+        bottom: -45px;
+        background-color: #121B30;
+        color: var(--color-white);
+        margin: 0;
+        padding: 5px;
+    }
+}

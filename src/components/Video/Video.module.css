@@ -1,0 +1,157 @@
+.video {
+    position: relative;
+    background-image: url(./img/usik.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--color-white);
+    min-height: 787px;
+}
+
+.video__layout {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 56px 0 112px;
+    background: linear-gradient(180deg, rgba(21, 35, 56, 0.5) 0%, rgba(24, 40, 64, 0.95) 100%);
+}
+
+.video__layout a{
+    color: var(--color-white);
+}
+
+.video__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video__head h2 {
+    color: var(--color-white);
+}
+
+.video__link {
+    position: relative;
+    line-height: 22px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-white);
+    margin-bottom: 32px;
+    text-decoration: none;
+    padding-right: 42px;
+}
+
+.video__link::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    background-image: url(./img/more.svg);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video__large {
+    max-width: 640px;
+    width: 100%;
+    margin-right: 32px;
+}
+
+.video__img {
+    height: 360px;
+    max-width: 640px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    margin-bottom: 32px;
+}
+
+.video__date {
+    font-size: 12px;
+    margin-bottom: 24px;
+}
+
+.video__title {
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.video__small {
+    display: grid;
+    grid-template-columns: 304px 304px;
+    grid-template-rows: 1fr 1fr;
+    gap: 32px;
+}
+
+@media (max-width: 1200px) {
+    .video {
+        min-height: 695px;
+    }
+
+    .video__small {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .video__title {
+        font-size: 24px;
+    }
+
+    .video__img {
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .video__title {
+        font-size: 18px;
+    }
+
+    .video__date {
+        margin-bottom: 10px;
+    }
+
+    .video__img {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .video {
+        background-image: none;
+        min-height: 100%;
+    }
+
+    .video__layout {
+        position: static;
+        background: #182840;
+        height: auto;
+    }
+
+    .video__large {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 575px) {
+    .video__small {
+        grid-template-columns: 1fr;
+    }
+
+    .video__title {
+        font-size: 22px;
+    }
+}

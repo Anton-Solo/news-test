@@ -1,0 +1,21 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 106px;
+    height: 35px;
+    background: #F7F7F7;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.menu__img {
+    width: 18px;
+    height: 8px;
+    margin-right: 16px;
+}
+
+.menu__name {
+    margin-top: 3px;
+}

@@ -1,0 +1,7 @@
+.active {
+    display: block;
+}
+
+.image {
+    transform: rotate(180deg);
+}

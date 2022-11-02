@@ -1,0 +1,71 @@
+.region {
+    margin-top: 56px;
+}
+
+.region__head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.region__link {
+    display: block;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--color-orange);
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.region__link:hover {
+    text-decoration: underline;
+}
+
+.city__wrapper {
+    margin: 24px 0 0;
+}
+
+.region__post:not(:last-child) {
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.region__time {
+    line-height: 20px;
+    color: #707070;
+    margin-right: 3px;
+}
+
+.region__title {
+    line-height: 22px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-text);
+}
+
+.more {
+    position: absolute;
+    bottom: 37px;
+    line-height: 22px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-text);
+    text-decoration: none;
+    padding-right: 48px;
+    margin-top: auto;
+}
+
+.more::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url(./img/more.svg);
+}
+
+@media (max-width: 992px) {
+    
+}
