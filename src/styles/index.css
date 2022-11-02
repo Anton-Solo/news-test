@@ -1,0 +1,115 @@
+/***************************************************
+FONTS
+/***************************************************/
+
+@font-face {
+  font-family: 'TT-Severs';
+  src: url(../fonts/TT\ Severs\ Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+/***************************************************
+VARIABLES
+/***************************************************/
+:root {
+  --font-family-main: 'TT-Severs';
+
+  --color-white:       #FFFFFF;
+  --color-black:       #000000;
+  --color-light-gray:  #E8E8E8;
+  --color-orange:      #FF7534;
+  --color-text:        #182840;
+
+  --background-color:  #F7F7F7;
+
+  --font-size-main:      14px;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-main);
+  background-color: var(--background-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+p {
+  margin: 0;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #2D2D2D;
+  padding: 0;
+  margin: 0 0 32px;
+}
+
+.h3 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #2D2D2D;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 575px) {
+  .h3 {
+    font-size: 20px;
+  }
+
+  .h2 {
+    font-size: 30px;
+  }
+}
+
+.active {
+  display: block!important;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+@media (min-width: 576px) {
+  .container {
+      width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+      width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+      width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+      width: 1140px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+      width: 1312px;
+  }
+}
+
