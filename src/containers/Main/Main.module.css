@@ -1,0 +1,24 @@
+.main {
+    padding: 64px 0 32px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 575px) {
+    .main {
+        padding: 40px 0;
+    }
+}

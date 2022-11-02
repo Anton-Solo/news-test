@@ -1,0 +1,133 @@
+.footer__top {
+    padding: 56px 0 62px;
+    border-top: 1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.categories__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 66px;
+}
+
+.social__links {
+    display: flex;
+    align-items: center;
+    margin: 32px 0 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social__links .link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social__links li:not(:last-child) {
+    margin-right: 32px;
+}
+
+.link__img {
+    width: 22px;
+    height: 22px;
+    margin-right: 12px;
+}
+
+.link__name {
+    color: #434343;
+}
+
+.footer__bottom {
+    padding: 24px 0 32px;
+}
+
+.copyright {
+    text-align: center;
+    text-transform: uppercase;
+    color: #515151;
+    margin-bottom: 24px;
+}
+
+.rules {
+    text-align: center;
+}
+
+.rules__link {
+    text-decoration: none;
+    color: #919191;
+}
+
+.rules__link:not(:last-child) {
+    margin-right: 32px;
+}
+
+.web__cat {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.web__cat li:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.web__cat a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #2D2D2D;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .social__links li:not(:last-child) {
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .social__links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px
+    }
+
+    .social__links li:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .social {
+        text-align: center;
+    }
+
+    .rules {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rules__link:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .categories__wrapper {
+        flex-direction: column;
+    }
+
+    .web__cat {
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer__top {
+        padding: 24px;
+    }
+
+    .social__links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
